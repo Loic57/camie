@@ -1,0 +1,40 @@
+.page-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #ffffff;
+  a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .page-wrapper {
+    @include flex-container();
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      color: #607f9c;
+      font-weight: 800;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+
+.page-header-login {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  text-align: center;
+
+  h1 {font-size: 5rem;}
+}

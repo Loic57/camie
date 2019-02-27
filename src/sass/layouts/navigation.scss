@@ -1,0 +1,24 @@
+.nav-primary {
+  li {
+    display: block;
+    margin-bottom: 2rem;
+    a {
+      color: #173655;
+      text-decoration: none;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+
+  @media(max-width: 375px) {
+    li {
+      a {font-size: 2.4rem;}
+    }
+  }
+
+  @media(max-width: 360px) {
+    li {
+      a {font-size: 2rem;}
+    }
+  }
+}

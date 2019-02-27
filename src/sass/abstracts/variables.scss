@@ -1,0 +1,50 @@
+
+/********** GENERAL **********/
+$font-family:                     "Raleway", sans-serif;
+$icon-font-family:                "Font Awesome 5 Free", "Font Awesome 5 Brands", sans-serif;
+$path-images:                      "../images";
+
+$main-color:                      #1e4664;
+$secondary-color:                 #a6d3ff;
+
+$pink:                            #ff9f9f;
+
+$main-color-hover:                darken($main-color, 15%);
+
+$main-color-darkest:              darken($main-color, 45%);
+$main-color-darker:               darken($main-color, 30%);
+$main-color-dark:                 darken($main-color, 15%);
+$main-color-light:                lighten($main-color, 15%);
+$main-color-lighter:              lighten($main-color, 30%);
+$main-color-lightest:             lighten($main-color, 40%);
+
+$secondary-color-darkest:         darken($secondary-color, 45%);
+$secondary-color-darker:          darken($secondary-color, 30%);
+$secondary-color-dark:            darken($secondary-color, 15%);
+$secondary-color-light:           lighten($secondary-color, 15%);
+$secondary-color-lighter:         lighten($secondary-color, 30%);
+$secondary-color-lightest:        lighten($secondary-color, 45%);
+
+$width-wrapper:                   1170px;
+
+$gray-darkest:                    #3e3e3e;
+$gray-darker:                     #7e7e7e;
+$gray-dark:                       #8f8f8f;
+$gray:                            #a3a3a3;
+$gray-light:                      #b9b9b9;
+$gray-lighter:                    #d7d7d7;
+$gray-lightest:                   #eeeeee;
+
+$green:                           #60D99F;
+$blue:                            #a7d3ff;
+$yellow:                          #f0ad4e;
+$red:                             #d9534f;
+
+$body-bg:                         #f7f7f7;
+$color-text:                      #ffffff;
+$font-size-main:                  62.5%;
+$font-size-main-rem:              1.7rem;
+$line-height:                     1.5;
+
+$width-wrapper:                   1170px;
+/********** GENERAL **********/

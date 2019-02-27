@@ -1,0 +1,123 @@
+.overlay {
+	min-height: 100vh;
+	position: fixed;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ff9fa0;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
+	z-index: 2;
+
+	&.overlay--v-align-middle {
+		@include flex-container();
+		align-items: center;
+	}
+
+	&.overlay--low-opacity {
+		background-color: rgba(#173655, 0.6);
+	}
+
+	&.overlay--left-to-right {
+		@include translateX(-100%);
+		@include transition(0.3s);
+	}
+
+	&.overlay--bottom-to-top {
+		@include translateY(100%);
+		@include transition(0.3s);
+	}
+
+	&.overlay--scale {
+		@include scale(0.9);
+		@include opacity(0);
+		visibility: hidden;
+		@include transition(0.3s);
+	}
+
+	&.overlay--nav {
+		background-color: #ffffff;
+		z-index: 3;
+		padding: 5rem;
+		@include flex-container();
+		align-items: center;
+
+		.btn-icon {
+			position: absolute;
+			top: 1rem;
+			right: 2rem;
+		}
+
+		.link-nav-primary {
+			color: #173655;
+			text-decoration: none;
+			font-size: 3rem;
+			font-weight: 700;
+			position: absolute;
+			bottom: 8rem;
+
+			@media(max-width: 375px) {
+				font-size: 2.4rem;
+			}
+
+			@media(max-width: 360px) {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	&.overlay--profil-kid {
+		background-color: #ffeae9;
+	}
+
+	.overlay__close {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+}
+
+/*body {
+	&:before {
+		@include position(fixed, 0,0,0,0);
+		background-color: rgba(0,0,0,0);
+		@include transition(0.7s);
+		content: "";
+		z-index: 0;
+	}
+}*/
+
+
+body.overlay--open {
+	/*&:before {
+		content: "";
+		background-color: rgba(0,0,0,0.7);
+		@include transition(0.5s);
+	}*/
+
+
+	.overlay.overlay--open {
+		&.overlay--left-to-right {
+			@include translateX(0%);
+			@include transition(0.3s);
+		}
+
+		&.overlay--bottom-to-top {
+			@include translateY(0%);
+			@include transition(0.3s);
+		}
+
+		&.overlay--scale {
+			@include scale(1);
+			@include opacity(1);
+			visibility: visible;
+			@include transition(0.3s);
+		}
+	}
+}

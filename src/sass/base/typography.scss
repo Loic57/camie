@@ -1,0 +1,48 @@
+
+html, body {
+  font-size: $font-size-main;
+}
+
+body, input, select, textarea, button {
+  font-family: $font-family;
+  color: $color-text;
+  line-height: $line-height;
+  font-size: $font-size-main-rem;
+  font-weight: 300;
+}
+
+p {
+  color: $main-color;
+  margin-bottom: 3rem;
+  &:last-child {margin-bottom: 0;}
+}
+
+b {
+  font-weight: bold;
+}
+
+.title-1 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.title-2 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 2.6rem;
+  margin-bottom: 0;
+}
+
+.text-left {text-align: center;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+.title-special {
+  text-align: center;
+  margin-bottom: 5rem;
+
+  p {color: #183553;font-weight: 700;font-size: 3rem;line-height: 1.2;}
+  p:last-child {font-weight: 500;font-size: 2rem;}
+}

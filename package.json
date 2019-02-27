@@ -1,0 +1,50 @@
+{
+  "name": "buddycss",
+  "version": "1.0.7",
+  "description": "BuddyCSS is a CSS framework for people who love coding.",
+  "keywords": [
+    "css",
+    "sass",
+    "javascript",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "mobile"
+  ],
+  "main": "index.js",
+  "homepage": "https://buddycss.com",
+  "author": "Sciampagna Loïc",
+  "license": "MIT",
+  "dependencies": {
+    "fontawesome": "^4.7.2"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "abbrev": "^1.1.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.23.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-wait": "^0.0.2",
+    "run-sequence": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BuddyCSS/BuddyCSS"
+  },
+  "bugs": {
+    "url": "https://github.com/BuddyCSS/BuddyCSS/issues"
+  }
+}

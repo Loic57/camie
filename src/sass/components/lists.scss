@@ -1,0 +1,48 @@
+ul.list-1 {
+   li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+
+    &:before {
+      @include position(absolute, 0, auto, auto, 0);
+      content: "\f105";
+      font-family: $icon-font-family;
+      font-weight: 900;
+      color: $main-color;
+    }
+
+    ul {margin-top: 1rem;}
+  }
+}
+
+ol.list-1 {
+  list-style-type: decimal;
+
+  li {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  ol {margin-top: 1rem;list-style-type: decimal;}
+}
+
+.list-1 {
+  a {text-decoration: underline;}
+}
+
+
+dl {
+  @include flex-container();
+  flex-wrap: wrap;
+
+  dt {
+    width: 33.33333%;
+    padding-right: 1rem;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  dd {width: 66.66666%;margin-bottom: 1rem;}
+}
