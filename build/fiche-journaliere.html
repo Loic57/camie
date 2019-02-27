@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Camie</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700,800,900,300italic,600italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/buddy.plugins.min.css">
+  <link rel="stylesheet" type="text/css" href="css/buddy.css">
+
+  <script type="text/javascript" src="js/buddy.js"></script>
+</head>
+<body>
+
+
+<div class="page-header">
+	<div class="page-wrapper">
+		<a href="list-enfants.html" class="btn-icon"><i class="fas fa-arrow-left" aria-label="hidden"></i></a>
+		<span>Petit Soleil</span>
+		<button type="button" data-modal="modalNav" class="btn-icon"><i class="fas fa-bars" aria-label="hidden"></i></button>
+	</div>
+</div>
+
+<section class="overlay overlay--nav overlay--scale" data-modal="modalNav">
+	<button type="button" data-modal="modalNav" class="btn-icon"><i class="fas fa-times" aria-label="hidden"></i></button>
+	<nav class="nav-primary">
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="list-enfants.html">Liste d'enfants</a></li>
+			<li><a href="profil.html">Profil</a></li>
+		</ul>
+	</nav>
+	<a href="#" class="link-nav-primary">Se déconnecter</a>
+</section>
+
+
+<main>
+  <section class="pb-5">
+    <div class="page-wrapper">
+      <div class="box-user box-user--girl">
+        <div class="box-letters">JK</div>
+
+        <div class="box-user__content">
+          <form class="grid-flex">
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="heureArrivee">Heure d'arrivée</label>
+                <input type="text" id="heureArrivee" name="heureArrivee" placeholder="hh:mm" />
+                <img src="images/icon-clock-green.svg" />
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="heureDepart">Heure de départ</label>
+                <input type="text" id="heureDepart" name="heureDepart" placeholder="hh:mm" />
+                <img src="images/icon-clock-red.svg" />
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="activites">Activitées réalisées</label>
+                <input type="text" id="activites" name="activites" placeholder="Activités du jour"/>
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="communication">Communication reçue</label>
+                <input type="text" id="communication" name="communication" placeholder="Médicaments à prendre, ..."/>
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="commentaire">Commentaire purécultrice</label>
+                <textarea id="commentaire" name="commentaire" placeholder="Commentaire supplémentaire"></textarea>
+              </div>
+            </div>
+          </form>
+
+          <button type="button" data-modal="addRepas" class="btn bg-blue fa-utensils left d-block mb-2">Ajouter un repas</button>
+          <button type="button" data-modal="addSieste" class="btn bg-blue fa-bed left d-block mb-2">Ajouter une sieste</button>
+          <button type="button" data-modal="addSelle" class="btn bg-blue fa-toilet-paper left d-block">Ajouter une selle</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="overlay overlay--scale overlay--low-opacity overlay--v-align-middle" data-modal="addRepas">
+    <div class="overlay__close"></div>
+    <div class="page-wrapper">
+      <div class="box-info">
+        <div class="box-info__title">
+          <i class="fas fa-utensils"></i> <span>Ajouter un repas</span>
+        </div>
+        <div class="box-info__content">
+          <form class="grid-flex">
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="heureRepas">Heure du repas</label>
+                <input type="text" id="heureRepas" name="heureRepas" placeholder="hh:mm" />
+                <img src="images/icon-clock-green.svg" />
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="heureRepas">Forme du repas</label>
+                <select required>
+                  <option value="" hidden>Sélectionnez la forme du repas</option> <!-- placeholder, ne surtout pas enlever le hidden -->
+                  <option>Biberon</option>
+                  <option>Panade</option>
+                  <option>Menu du jour</option>
+                </select>
+              </div>
+            </div>
+            <!-- Contenu à afficher en fonction de l'option choisie dans le select -->
+            <!--<div class="column w-100">
+              <div class="input-animation">
+                <label for="biberon">Nombre de ml du biberon</label>
+                <input type="text" id="biberon" name="biberon" placeholder="150" />
+              </div>
+            </div>
+
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="entree">Entrée</label>
+                <select required>
+                  <option value="" hidden>Sélectionnez l'état de l'entrée</option>
+                  <option>Rien mangé</option>
+                  <option>A mangé la moitié</option>
+                  <option>A tout mangé</option>
+                  <option>S'est reservi</option>
+                </select>
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label>Plat</label>
+                <select required>
+                  <option value="" hidden>Sélectionnez l'état du repas</option>
+                  <option>Rien mangé</option>
+                  <option>A mangé la moitié</option>
+                  <option>A tout mangé</option>
+                  <option>S'est reservi</option>
+                </select>
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="entree">Dessert</label>
+                <select required>
+                  <option value="" hidden>Sélectionnez l'état du dessert0</option>
+                  <option>Rien mangé</option>
+                  <option>A mangé la moitié</option>
+                  <option>A tout mangé</option>
+                  <option>S'est reservi</option>
+                </select>
+              </div>
+            </div>-->
+
+
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="commentaire">Commentaire</label>
+                <textarea id="commentaire" name="commentaire" placeholder="Commentaire supplémentaire"></textarea>
+              </div>
+            </div>
+
+            <button type="button" type="submit" name="button" disabled class="btn bg-green disabled">Ajouter le repas</button> <!-- enlever disabled pour avoir le bouton vert -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="overlay overlay--scale overlay--low-opacity overlay--v-align-middle" data-modal="addSieste">
+    <div class="overlay__close"></div>
+    <div class="page-wrapper">
+      <div class="box-info">
+        <div class="box-info__title">
+          <i class="fas fa-bed"></i> <span>Ajouter une sieste</span>
+        </div>
+        <div class="box-info__content">
+          <form class="grid-flex">
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="heureDebutSieste">Heure de début</label>
+                <input type="text" id="heureDebutSieste" name="heureDebutSieste" placeholder="hh:mm" />
+                <img src="images/icon-clock-green.svg" />
+              </div>
+            </div>
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="heureFinSieste">Heure de fin</label>
+                <input type="text" id="heureFinSieste" name="heureFinSieste" placeholder="hh:mm" />
+                <img src="images/icon-clock-red.svg" />
+              </div>
+            </div>
+
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="commentaire">Commentaire</label>
+                <textarea id="commentaire" name="commentaire" placeholder="Commentaire supplémentaire"></textarea>
+              </div>
+            </div>
+
+            <button type="button" type="submit" name="button" disabled class="btn bg-green disabled">Ajouter la sieste</button> <!-- enlever disabled pour avoir le bouton vert -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="overlay overlay--scale overlay--low-opacity overlay--v-align-middle" data-modal="addSelle">
+    <div class="overlay__close"></div>
+    <div class="page-wrapper">
+      <div class="box-info">
+        <div class="box-info__title">
+          <i class="fas fa-toilet-paper"></i> <span>Ajouter une selle</span>
+        </div>
+        <div class="box-info__content">
+          <form class="grid-flex">
+            <div class="column w-100 mb-2">
+              <label>Arrivé par accident ?</label>
+							<div class="input-group-radio">
+								<div class="input-radio">
+									<input type="radio" id="oui" name="radio2">
+									<label for="oui">Oui</label>
+								</div>
+								<div class="input-radio">
+									<input type="radio" id="non" name="radio2">
+									<label for="non">Non</label>
+								</div>
+							</div>
+						</div>
+
+            <div class="column w-100 mb-2">
+              <label>Forme des selles</label>
+
+            </div>
+
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="commentaire">Commentaire</label>
+                <textarea id="commentaire" name="commentaire" placeholder="Commentaire supplémentaire"></textarea>
+              </div>
+            </div>
+
+
+            <button type="button" type="submit" name="button" disabled class="btn bg-green disabled">Ajouter la sieste</button> <!-- enlever disabled pour avoir le bouton vert -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

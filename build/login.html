@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Camie</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700,800,900,300italic,600italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/buddy.plugins.min.css">
+  <link rel="stylesheet" type="text/css" href="css/buddy.css">
+
+  <script type="text/javascript" src="js/buddy.js"></script>
+</head>
+<body class="overlay--open">
+
+  <div class="page-header-login">
+    <div class="page-wrapper">
+      <h1>Camie</h1>
+    </div>
+  </div>
+
+
+<main>
+  <section class="pb-5">
+    <div class="page-wrapper">
+      <!-- ajouter class box-user--activated pour avoir le bouton submit (penser à enlever la class disabled) qui devient vert ainsi que le cercle autour du chien -->
+      <div class="box-user">
+        <div class="box-user__login"><img src="images/dog.svg" alt="" /></div>
+
+        <div class="box-user__content">
+          <form class="grid-flex">
+            <div class="column w-100">
+              <div class="input-animation">
+                <label for="user">Nom d'utilisateur</label>
+                <input type="text" id="user" name="user" placeholder="pseudo@gmail.com">
+              </div>
+            </div>
+
+            <div class="column w-100">
+              <div class="input-animation active">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="votre mot de passe">
+              </div>
+            </div>
+
+            <div class="column w-100">
+          		<div class="custom-input-checkbox-2">
+          			<input type="checkbox" id="checkbox-rules" />
+          			<label for="checkbox-rules">I accept the privacy policies and the <a href="http://www.google.fr" target="_blank">terms and conditions.</a></label>
+          		</div>
+            </div>
+
+            <button type="button" type="submit" name="button" class="btn bg-main-color" data-modal="loginFailed">Se connecter</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<section class="overlay overlay--scale overlay--v-align-middle overlay--low-opacity" data-modal="loginFailed">
+  <div class="overlay__close"></div>
+  <div class="page-wrapper">
+    <div class="box-info">
+      <p class="c-red"><b>Invalid username or password. Please try again</b></p>
+      <!--<p class="text-center c-green"><i class="far fa-check-circle fa-5x"></i></p>
+      <p class="c-main-color"><b>variable a bien été ajouté à la variable</b></p>-->
+      <p class="text-right"><button type="button" class="btn-2 bg-gray" data-close="close">Fermer</button></p>
+    </div>
+  </div>
+</section>
