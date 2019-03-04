@@ -1021,6 +1021,31 @@ p {
 b {
   font-weight: bold; }
 
+.link-next, .link-prev, .link-follow {
+  color: #1e4664;
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  background-color: transparent; }
+  .link-next:hover, .link-prev:hover, .link-follow:hover {
+    color: #0c1d29; }
+  .link-next:before, .link-prev:before, .link-follow:before {
+    position: absolute;
+    font-weight: 900;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free"; }
+
+.link-prev {
+  padding-left: 2.5rem; }
+  .link-prev:before {
+    position: absolute;
+    content: "\f30a";
+    left: 0; }
+
 .title-1 {
   font-weight: 700;
   color: #ffffff;
@@ -1034,7 +1059,7 @@ b {
   margin-bottom: 0; }
 
 .text-left {
-  text-align: center; }
+  text-align: left; }
 
 .text-center {
   text-align: center; }
@@ -1053,154 +1078,6 @@ b {
   .title-special p:last-child {
     font-weight: 500;
     font-size: 2rem; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?u1905h");
-  src: url("../fonts/icomoon.eot?u1905h#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?u1905h") format("truetype"), url("../fonts/icomoon.woff?u1905h") format("woff"), url("../fonts/icomoon.svg?u1905h#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-picto-fiche-fille .path1:before {
-  content: "\e900";
-  color: #ffeaea; }
-
-.icon-picto-fiche-fille .path2:before {
-  content: "\e901";
-  margin-left: -1em;
-  color: #ff9f9f; }
-
-.icon-picto-fiche-fille .path3:before {
-  content: "\e902";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-fille .path4:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-fille .path5:before {
-  content: "\e904";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-fille .path6:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-fille .path7:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-fille .path8:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-fille .path9:before {
-  content: "\e908";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-garcon .path1:before {
-  content: "\e909";
-  color: #a6d3ff; }
-
-.icon-picto-fiche-garcon .path2:before {
-  content: "\e90a";
-  margin-left: -1em;
-  color: #54a4f3; }
-
-.icon-picto-fiche-garcon .path3:before {
-  content: "\e90b";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-garcon .path4:before {
-  content: "\e90c";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-garcon .path5:before {
-  content: "\e90d";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-garcon .path6:before {
-  content: "\e90e";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-garcon .path7:before {
-  content: "\e90f";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-garcon .path8:before {
-  content: "\e910";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-fiche-garcon .path9:before {
-  content: "\e911";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-repas .path1:before {
-  content: "\e912";
-  color: #54a4f3; }
-
-.icon-picto-repas .path2:before {
-  content: "\e913";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-selle-dure:before {
-  content: "\e914";
-  color: #173655; }
-
-.icon-picto-selle-liquide:before {
-  content: "\e915";
-  color: #173655; }
-
-.icon-picto-selle-molle:before {
-  content: "\e916";
-  color: #fff; }
-
-.icon-picto-sieste .path1:before {
-  content: "\e917";
-  color: #54a4f3; }
-
-.icon-picto-sieste .path2:before {
-  content: "\e918";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-sieste .path3:before {
-  content: "\e919";
-  margin-left: -1em;
-  color: white; }
-
-.icon-picto-sieste .path4:before {
-  content: "\e91a";
-  margin-left: -1em;
-  color: white; }
 
 .box-user {
   background-color: #ffffff;
@@ -2185,6 +2062,51 @@ output:-moz-ui-invalid {
     border-color: #d7d7d7; }
   .custom-input-checkbox-2.is-disabled label:after {
     color: #d7d7d7; }
+
+.custom-input-radio {
+  margin-bottom: 2rem; }
+  .custom-input-radio input[type="radio"] {
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=$opacity-ie);
+    filter: alpha(opacity=0);
+    height: 0;
+    width: 0;
+    position: absolute; }
+  .custom-input-radio label {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-left: 28px;
+    padding: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #173655;
+    margin: 0;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #F2F0F4; }
+    .custom-input-radio label svg {
+      margin-right: 2rem; }
+  .custom-input-radio input[type="radio"]:checked + label {
+    background-color: #54A4F3;
+    color: #fff; }
+    .custom-input-radio input[type="radio"]:checked + label svg path, .custom-input-radio input[type="radio"]:checked + label svg rect {
+      fill: #ffffff; }
+  .custom-input-radio.is-disabled label {
+    color: #b9b9b9; }
+    .custom-input-radio.is-disabled label:before {
+      border-color: #d7d7d7; }
+    .custom-input-radio.is-disabled label:after {
+      color: #d7d7d7; }
 
 .input-group-radio {
   display: -webkit-box;

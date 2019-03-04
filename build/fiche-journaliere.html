@@ -91,6 +91,7 @@
     <div class="overlay__close"></div>
     <div class="page-wrapper">
       <div class="box-info">
+				<p class="text-left"><button type="button" class="link-prev" data-close="close">Retour</button></p>
         <div class="box-info__title">
           <i class="fas fa-utensils"></i> <span>Ajouter un repas</span>
         </div>
@@ -174,11 +175,11 @@
     </div>
   </section>
 
-
   <section class="overlay overlay--scale overlay--low-opacity overlay--v-align-middle" data-modal="addSieste">
     <div class="overlay__close"></div>
     <div class="page-wrapper">
       <div class="box-info">
+				<p class="text-left"><button type="button" class="link-prev" data-close="close">Retour</button></p>
         <div class="box-info__title">
           <i class="fas fa-bed"></i> <span>Ajouter une sieste</span>
         </div>
@@ -217,6 +218,7 @@
     <div class="overlay__close"></div>
     <div class="page-wrapper">
       <div class="box-info">
+				<p class="text-left"><button type="button" class="link-prev" data-close="close">Retour</button></p>
         <div class="box-info__title">
           <i class="fas fa-toilet-paper"></i> <span>Ajouter une selle</span>
         </div>
@@ -238,7 +240,33 @@
 
             <div class="column w-100 mb-2">
               <label>Forme des selles</label>
-
+							<div class="custom-input-radio">
+								<input type="radio" id="selleLiquide" name="selleGroup">
+								<label for="selleLiquide">
+									<svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.65283 8.90694C7.5355 5.57272 10.6026 2.93672 18.9235 7.63849C22.9208 9.89672 26.1453 10.7492 28.8297 10.7487C33.5297 10.7487 36.5746 8.13405 39.2084 5.87094C40.1475 5.06472 40.2684 3.63316 39.4782 2.6736C38.6879 1.71405 37.2862 1.59005 36.3471 2.3976C32.4648 5.73316 29.3982 8.36827 21.0746 3.6656C10.0795 -2.54551 4.92972 1.87894 0.7915 5.43316C-0.147167 6.23983 -0.2685 7.67138 0.521722 8.63094C1.3115 9.59005 2.71328 9.71405 3.65283 8.90694ZM36.3471 13.746C32.4648 17.0807 29.3982 19.7163 21.0746 15.014C10.0795 8.80249 4.92972 13.2269 0.7915 16.7816C-0.147167 17.5887 -0.2685 19.0203 0.521722 19.9785C1.3115 20.938 2.71372 21.062 3.65283 20.2549C7.5355 16.9203 10.6026 14.2847 18.9235 18.986C22.9208 21.2443 26.1453 22.0972 28.8297 22.0972C33.5297 22.0972 36.5746 19.482 39.2084 17.2194C40.1475 16.4123 40.2684 14.9807 39.4782 14.022C38.6884 13.0616 37.2866 12.9385 36.3471 13.746ZM36.3471 25.0932C32.4648 28.4283 29.3982 31.0634 21.0746 26.3616C10.0795 20.15 4.92972 24.5745 0.7915 28.1292C-0.147167 28.9358 -0.2685 30.3678 0.521722 31.3274C1.3115 32.2856 2.71372 32.41 3.65283 31.6029C7.5355 28.2674 10.6022 25.6332 18.9235 30.3336C22.9208 32.5927 26.1453 33.4447 28.8297 33.4447C33.5297 33.4447 36.5746 30.8296 39.2084 28.5674C40.1475 27.7607 40.2684 26.3283 39.4782 25.3692C38.6879 24.41 37.2866 24.2869 36.3471 25.0932Z" fill="#173655"/>
+										</svg>
+									<span>Selle liquide</span>
+								</label>
+							</div>
+							<div class="custom-input-radio">
+								<input type="radio" id="selleMolle" name="selleGroup">
+								<label for="selleMolle">
+									<svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M36.3471 2.74606C32.4648 6.08072 29.3982 8.71628 21.0746 4.01406C10.0795 -2.1975 4.92972 2.22695 0.7915 5.78161C-0.147167 6.58872 -0.2685 8.02028 0.521722 8.9785C1.3115 9.93806 2.71372 10.0621 3.65283 9.25495C7.5355 5.92028 10.6026 3.28472 18.9235 7.98606C22.9208 10.2443 26.1453 11.0972 28.8297 11.0972C33.5297 11.0972 36.5746 8.48206 39.2084 6.21939C40.1475 5.41228 40.2684 3.98072 39.4782 3.02206C38.6884 2.06161 37.2866 1.9385 36.3471 2.74606Z" fill="#173655"/>
+									</svg>
+									<span>Selle molle</span>
+								</label>
+							</div>
+							<div class="custom-input-radio">
+								<input type="radio" id="selleNormale" name="selleGroup">
+								<label for="selleNormale">
+									<svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="40" height="4" rx="2" fill="#173655"/>
+									</svg>
+									<span>Selle dure</span>
+								</label>
+							</div>
             </div>
 
             <div class="column w-100">

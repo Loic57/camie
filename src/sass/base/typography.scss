@@ -21,6 +21,36 @@ b {
   font-weight: bold;
 }
 
+.link-next, .link-prev, .link-follow {
+  color: $main-color;
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+
+  &:hover {color: $main-color-dark;}
+
+  &:before {
+    position: absolute;
+    font-weight: 900;
+    top: 50%;
+    @include translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+  }
+}
+
+.link-prev {
+  padding-left: 2.5rem;
+
+  &:before {
+    position: absolute;
+    content: "\f30a";
+    left: 0;
+  }
+}
+
+
+
 .title-1 {
   font-weight: 700;
   color: #ffffff;
@@ -35,7 +65,7 @@ b {
   margin-bottom: 0;
 }
 
-.text-left {text-align: center;}
+.text-left {text-align: left;}
 .text-center {text-align: center;}
 .text-right {text-align: right;}
 
