@@ -472,9 +472,10 @@
     @include flex-container();
     @include flex-v-align-center();
     padding: 1.5rem 1rem;
+
     .btn-3__icon {
       flex: 0 0 20%;
-      max-width: 20%;
+      max-width: 50px;
       text-align: left;
 
       > span {
@@ -507,8 +508,8 @@
     }
 
     .btn-3__remove {
-      flex: 0 0 10%;
-      max-width: 10%;
+      flex: 1;
+      text-align: right;
 
       color: #A6B0BA;
       font-size: 1.8rem;

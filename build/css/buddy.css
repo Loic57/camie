@@ -1680,7 +1680,7 @@ b {
     padding: 1.5rem 1rem; }
     .btn-3 .btn-3__wrapper .btn-3__icon {
       flex: 0 0 20%;
-      max-width: 20%;
+      max-width: 50px;
       text-align: left; }
       .btn-3 .btn-3__wrapper .btn-3__icon > span {
         background-color: #54A4F3;
@@ -1706,8 +1706,8 @@ b {
         .btn-3 .btn-3__wrapper .btn-3__title .title__sub-title span {
           color: #54A4F3; }
     .btn-3 .btn-3__wrapper .btn-3__remove {
-      flex: 0 0 10%;
-      max-width: 10%;
+      flex: 1;
+      text-align: right;
       color: #A6B0BA;
       font-size: 1.8rem; }
   .btn-3 p {
