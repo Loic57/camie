@@ -79,6 +79,69 @@
             </div>
           </form>
 
+					<button type="button" class="btn-3" data-modal="removeInfos">
+						<div class="btn-3__wrapper">
+							<span class="btn-3__icon"><span><i class="fa fa-bed"></i></span></span>
+							<span class="btn-3__title">
+								Sieste<br>
+								<span class="title__sub-title">de <span>hh:mm</span> à <span>hh:mm</span></span>
+							</span>
+							<span class="btn-3__remove"><i class="fa fa-trash"></i></span>
+						</div>
+					</button>
+
+					<button type="button" class="btn-3" data-modal="removeInfos">
+						<div class="btn-3__wrapper">
+							<span class="btn-3__icon"><span><i class="fa fa-toilet-paper"></i></span></span>
+							<span class="btn-3__title">
+								Selle <span class="c-blue">mole</span><br>
+								<span class="title__sub-title">à <span>hh:mm</span> par <span>accident</span></span>
+							</span>
+							<span class="btn-3__remove"><i class="fa fa-trash"></i></span>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</button>
+
+					<button type="button" class="btn-3" data-modal="removeInfos">
+						<div class="btn-3__wrapper">
+							<span class="btn-3__icon"><span><i class="fa fa-utensils"></i></span></span>
+							<span class="btn-3__title">
+								Biberon<br>
+								<span class="title__sub-title">de <span>xx ml</span> à <span>hh:mm</span></span>
+							</span>
+							<span class="btn-3__remove"><i class="fa fa-trash"></i></span>
+						</div>
+					</button>
+
+					<button type="button" class="btn-3" data-modal="removeInfos">
+						<div class="btn-3__wrapper">
+							<span class="btn-3__icon"><span><i class="fa fa-utensils"></i></span></span>
+							<span class="btn-3__title">
+								Panade<br>
+								<span class="title__sub-title"><span>goût</span> à <span>hh:mm</span></span>
+							</span>
+							<span class="btn-3__remove"><i class="fa fa-trash"></i></span>
+						</div>
+					</button>
+
+					<button type="button" class="btn-3" data-modal="removeInfos">
+						<div class="btn-3__wrapper">
+							<span class="btn-3__icon"><span><i class="fa fa-utensils"></i></span></span>
+							<span class="btn-3__title">
+								Menu du jour<br>
+								<span class="title__sub-title">
+									Entrée: <span>rien mangé</span><br>
+									Plat: <span>a tout mangé</span><br>
+									Dessert: <span>A mangé la moitié</span>
+								</span>
+							</span>
+							<span class="btn-3__remove"><i class="fa fa-trash"></i></span>
+						</div>
+					</button>
+
           <button type="button" data-modal="addRepas" class="btn bg-blue fa-utensils left d-block mb-2">Ajouter un repas</button>
           <button type="button" data-modal="addSieste" class="btn bg-blue fa-bed left d-block mb-2">Ajouter une sieste</button>
           <button type="button" data-modal="addSelle" class="btn bg-blue fa-toilet-paper left d-block">Ajouter une selle</button>
@@ -283,4 +346,19 @@
       </div>
     </div>
   </section>
+
+	<section class="overlay overlay--scale overlay--v-align-middle overlay--low-opacity" data-modal="removeInfos">
+	  <div class="overlay__close"></div>
+	  <div class="page-wrapper">
+	    <div class="box-info">
+	      <p class="c-main-color"><b>Etes-vous sur de vouloir supprimer XXX ? </b></p>
+	      <!--<p class="text-center c-green"><i class="far fa-check-circle fa-5x"></i></p>
+	      <p class="c-main-color"><b>variable a bien été ajouté à la variable</b></p>-->
+	      <p class="text-center">
+					<button type="button" class="btn-2 bg-green" data-close="close">Oui</button>
+					<button type="button" class="btn-2 bg-gray" data-close="close">Annuler</button>
+				</p>
+	    </div>
+	  </div>
+	</section>
 </main>
