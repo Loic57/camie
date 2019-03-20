@@ -1738,8 +1738,6 @@ input, select, textarea {
   font-weight: 500;
   border: 0;
   font-size: 1.4rem; }
-  input:focus, select:focus, textarea:focus {
-    outline: 1px solid #1e4664 !important; }
 
 input[type=submit], button {
   border: none;
@@ -1847,14 +1845,31 @@ output:-moz-ui-invalid {
 
 .input-search {
   position: relative;
-  overflow: hidden; }
+  margin-bottom: 4rem; }
+  .input-search:before {
+    position: absolute;
+    content: "\f002";
+    color: #a3a3a3;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", sans-serif;
+    font-weight: 900;
+    left: 15px;
+    top: 8px; }
   .input-search input {
-    padding-right: 1rem; }
+    border-radius: 5px;
+    padding: 1rem 4.5rem 1rem 4.5rem; }
   .input-search button {
     position: absolute;
     right: 0;
-    top: 1px;
-    padding: 1.8rem 2.3rem; }
+    top: 0;
+    width: 50px;
+    height: 41px;
+    background-color: transparent;
+    color: #54A4F3;
+    display: none; }
+  .input-search.input-search--searching:before {
+    color: #54A4F3; }
+  .input-search.input-search--searching button {
+    display: block; }
 
 .input-animation {
   position: relative; }

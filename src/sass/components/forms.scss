@@ -6,10 +6,6 @@ input, select, textarea {
   font-weight: 500;
   border: 0;
   font-size: 1.4rem;
-
-  &:focus {
-    outline: 1px solid $main-color!important;
-  }
 }
 
 input[type=submit], button {
@@ -128,16 +124,36 @@ output:-moz-ui-invalid {color: $red;}
 
 .input-search {
   position: relative;
-  overflow: hidden; //IE hack
+  margin-bottom: 4rem;
+  &:before {
+    position: absolute;
+    content: "\f002";
+    color: $gray;
+    font-family: $icon-font-family;
+    font-weight: 900;
+    left: 15px;
+    top: 8px;
+  }
   input {
-    padding-right: 1rem;
+    border-radius: 5px;
+    padding: 1rem 4.5rem 1rem 4.5rem;
   }
 
   button {
     position: absolute;
     right: 0;
-    top: 1px;
-    padding: 1.8rem 2.3rem;
+    top: 0;
+    width: 50px;
+    height: 41px;
+    background-color: transparent;
+    color: $blue;
+    display: none;
+  }
+
+  &.input-search--searching {
+    &:before {color: $blue;}
+
+    button {display: block;}
   }
 }
 
