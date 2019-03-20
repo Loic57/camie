@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>export pdf</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Raleway', sans-serif;
+        color: #173655;
+      }
+
+
+      .page-header .grid-flex {
+        display: flex;
+
+      }
+
+      .page-header .grid-flex .column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        font-size: 22px;
+      }
+
+      .page-header .grid-flex .column:last-child {
+        text-align: right;
+        font-size: 18px
+      }
+
+      .page-content {
+        margin-top: 80px;
+      }
+
+      .text-1 {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+
+      .text-2 {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .box-1 {
+        margin-top: 30px;
+        width: 500px;
+      }
+
+      .box-1:first-of-type {
+        margin-top: 40px;
+        width: 500px;
+      }
+
+      .box-1 .box-1__title {
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .box-1 .box-1__content {
+        background-color: #F2F0F4;
+        border-radius: 8px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="page-header">
+        <div class="grid-flex">
+          <div class="column">
+            <strong>Fiche journalière</strong><br>
+            de <strong>Juliette Kindermans</strong><br>
+            23/03/2019
+          </div>
+          <div class="column">
+            <strong>Nom de la crèche</strong><br>
+            Addresse ligne 01<br>
+            Addresse ligne 02<br>
+            Numéro de tél<br>
+            email<br>
+            Camie.lu
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <p class="text-1">Heure d'arrivée: </p>
+        <p class="text-2">8h00</p>
+
+        <p class="text-1">Heure de départ: </p>
+        <p class="text-2">8h00</p>
+
+        <p class="text-1">Activités réalisées: </p>
+        <p class="text-2">Découverte ferme</p>
+
+        <p class="text-1">Communication reçue: </p>
+        <p class="text-2">Léger rhume</p>
+
+        <p class="text-1">Communication puéricultrice: </p>
+        <p class="text-2">Vêtements de rechange utilisés</p>
+
+
+        <div class="box-1">
+          <p class="box-1__title">Sieste</p>
+          <div class="box-1__content">
+            de <strong>hh:mm</strong> à <strong>hh:mm</strong>
+          </div>
+        </div>
+
+        <div class="box-1">
+          <p class="box-1__title">Selle</p>
+          <div class="box-1__content">
+            Selle <strong>Mole</strong> à <strong>hh:mm</strong> par <strong>accident</strong>.<br>
+            Les vétements son sales
+          </div>
+        </div>
+
+        <div class="box-1">
+          <p class="box-1__title">Repas</p>
+          <div class="box-1__content">
+            <strong>Biberon</strong> de <strong>xx ml</strong> à <strong>hh:mm</strong><br>
+            <strong>Panade goût</strong> à <strong>hh:mm</strong><br>
+
+            <strong>Menu du jour</strong> à <strong>hh:mm</strong><br>
+            Entrée: Rien mangé
+            Plat: Rien mangé
+            Dessert: Rien mangé
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
